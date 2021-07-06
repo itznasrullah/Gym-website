@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 70%;
+}
+
+#home{
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.685),rgba(0, 0, 0, 0.431)
+    ) , url("img.jpg") no-repeat;
+    background-size: cover;   
+    background-position-x: right;
+    height: 100vh;
+}
+
+/* Navbar start */
+.navbar{
+    /* background-color: whitesmoke; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    /* height: 11%; */
+    /* width: 100%; */
+    padding: 2% 8%;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.logo span{
+    color: rgb(255, 45, 45);
+}
+
+.menu{
+    display: block;
+    color: white;
+    padding: 0.3rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.navbar-items{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    display: none;
+}
+
+li{
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid rgb(231, 219, 219);
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+/* 
+li a:hover{
+    background-color: rgb(255, 45, 45);
+} */
+/* Navbar end */
+
+/* Content */
+.content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+    padding: 0 8%;
+}
+
+.content h2{
+    font-weight: 800;
+    font-size: 2.3rem;
+    width: 20ch;
+    padding: 1rem 0;
+}
+
+.content h2 span{
+    color: rgb(248, 248, 161);
+}
+
+.content p{
+    width: 50%;
+    color: rgb(209, 209, 209);
+}
+
+.content a{
+    background-color: rgb(255, 45, 45);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.6rem;
+    margin: 1.1rem 0;
+}
+
+/* Header */
+.header{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 1.9rem 0 0 0;
+}
+/* 
+.header::after{
+    content: "";
+    background-color: red;
+    height: 1rem;
+    width: 1rem;
+} */
+
+/* Exercise section */
+#exercises{
+    background-color: black;
+    color: whitesmoke;
+    padding: 0 2.5%;
+}
+
+.exercises-conatiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.5rem 0;
+}
+
+.exercise-card{
+    border-radius: 5px;
+    height: 15rem;
+    width: 100%;
+    max-width: 24.9rem;
+    margin: 0.5rem;
+}
+
+/* Adding background images */
+.treadmill{
+    background: url("https://images.pexels.com/photos/3931124/pexels-photo-3931124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940") center / cover;  
+}
+
+.yoga{
+    background: url("https://images.pexels.com/photos/2294353/pexels-photo-2294353.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center / cover;
+}
+
+.lifting{
+    background: url("https://images.pexels.com/photos/841131/pexels-photo-841131.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center / cover;
+}
+
+.stretching{
+    background: url("https://images.pexels.com/photos/209969/pexels-photo-209969.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center / cover;
+}
+
+.cardio{
+    background: url("https://images.pexels.com/photos/8544616/pexels-photo-8544616.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500") center / cover;
+}
+
+.exercise-card h3{
+    display: block;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        to right, 
+        rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)
+        );
+    height: 100%;
+    width: 100%;
+}
+
+.exercise-card img{
+    object-fit: cover;
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
+
+/* Trainer section */
+#trainers{
+    background-color: rgb(26, 24, 24);
+    color: whitesmoke;
+    padding: 0 2%;
+    /* width: 100vw; */
+    min-height: 100vh;
+}
+
+.trainer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.3rem 0;
+}
+
+.trainer{
+    height: 25rem;
+    border-radius: 7px;
+    width: 19rem;
+    margin: 1rem;
+}
+
+.trainer img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Pricing section */
+#pricing{
+    background-color: black;
+    color: whitesmoke;
+    min-height: 100vh;
+    padding: 0 2%;
+}
+
+.pricing-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1.3rem 0;
+}
+
+.plan{
+    background-color: rgb(26, 24, 24);
+    height: 25rem;
+    border-radius: 7px;
+    width: 19rem;
+    margin: 1rem;
+}
+
+/* Contact Us section */
+#contact-us{
+    background-color: rgb(26, 24, 24);
+    color: white;
+    padding: 0 2%;
+}
+
+.contact-us-container{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+}
+
+.address, .phone-number ,.email {
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+    padding: 1rem;
+    /* height: 6rem; */
+    width: 20%;
+    overflow-wrap: break-word;
+}
+
+#contact-us div a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.address h3, .phone-number h3 ,.email h3{
+    font-size: 1.5rem;
+}
+
+.address p{
+    font-size: 1.2rem;
+}  
+
+/* Font sizing */
+
+@media (max-width:850px){
+    html{
+        font-size: 88%;
+    }
+    .content h2,.content p{
+        width: 70%;
+    }
+}
+
+@media (max-width:650px){
+    html{
+        font-size: 85%;
+    }
+    .content h2,.content p{
+        width: 75%;
+    }
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 80%;
+    }
+    .content h2,.content p{
+        width: 80%;
+    }
+}
+
+@media (max-width:520px){
+    html{
+        font-size: 75%;
+    }
+    .content h2,.content p{
+        width: 85%;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 70%;
+    }
+    .content h2,.content p{
+        width: 100%;
+    }
+}
+
+@media (min-width:851px){
+    html{
+        font-size: 95%;
+    }
+    .content h2,.content p{
+        width: 65%;
+    }
+}
+
+@media (min-width:1000px){
+    html{
+        font-size: 100%;
+    }
+    .content h2,.content p{
+        width: 55%;
+    }
+}
+/* Font sizing end */
+
+/* Responsive nav */
+@media (min-width:700px){
+    .navbar .menu{
+        display: none;
+    }
+    /* Navbar start */
+    .navbar{
+        /* background-color: whitesmoke; */
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 11%;
+        width: auto;
+        padding: 0 8%;
+    }
+    
+    .nav-container{
+        padding: 0;
+    }
+
+    .logo{
+        color: white;
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .logo span{
+        color: rgb(255, 45, 45);
+    }
+
+    .navbar-items{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        /* display: none; */
+    }
+
+    li{
+        list-style: none;
+        border-bottom: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 0.6rem 1rem;
+    }
+
+    li a:hover{
+        background-color: rgb(255, 45, 45);
+    }
+    /* Navbar end */
+    
+    .contact-btn{
+        background-color: rgb(255, 45, 45);
+    }
+
+    .scroll-nav li a:hover{
+        background-color: whitesmoke;
+        border: 2px solid rgb(255, 45, 45);
+        color: rgb(255, 45, 45);
+    }
+}
+
+
+/* Hover effect in exercise card */
+@media (min-width:1025px){
+    
+    .exercise-card h3{
+        display: none;
+    }
+
+    .exercise-card:hover h3{
+        display: block;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(
+            to right, 
+            rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.514)
+            );
+        height: 100%;
+        width: 100%;
+    }
+
+}
+
+.scroll-nav{
+    background-color: whitesmoke;
+    transition-duration: 0.3s;
+}
+
+.scroll-nav .menu{
+    color: black;
+}
+
+.scroll-nav .logo, .scroll-nav ul li a{
+    color: black;
+}
+
+/* Shows Navbar items */
+.show .menu , .show .logo,.show ul li a{
+    color: black;
+}
+
+.show .navbar-items{
+    display: block;
+}
+
+.show-color{
+    background-color: whitesmoke;
+}
